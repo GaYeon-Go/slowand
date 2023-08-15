@@ -1,0 +1,5 @@
+/* sub1_popup.css */
+@import url(reset.css);
+
+div.washing_popup{overflow-x:hidden; background:#333;}
+div.washing_popup>img{position:relative; left:50%; transform:translateX(-50%); width:700px;}

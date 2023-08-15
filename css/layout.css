@@ -1,0 +1,99 @@
+/* layout.css */
+@import url(reset.css);
+
+/* 글꼴 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&family=Outfit:wght@300;400;500;800&display=swap');
+
+/* common */
+html{font-size:10pt; color:#3f3f3f; font-family: 'Outfit','Noto Sans KR',Dotum,AppleGothic,sans-serif; font-weight:400;}
+body{min-width:140px; min-height:150px; cursor:default;}
+a{text-decoration:none; color:#3f3f3f;}
+
+/* Mobile 크기 0~768 */
+@media screen and (max-width:768px) {
+    /* layout */
+    #header{width:100%; height:120px; position:fixed; left:0; top:0; z-index:40; overflow:hidden;}
+    .banner{z-index:30; overflow:hidden; position:relative; width:100%; height:785px; background:#ddd;}
+    #container{width:100%; background:#f6f4ee;}
+    #container2{width:100%; background:#fff;}
+        .slowand{width:96%; min-width:640px; margin:0 auto; padding:30px 0 50px; text-align:center;}
+        .slowPick{width:96%; min-width:640px; margin:0 auto 100px;}
+        .theBest{position:relative; width:96%; min-width:640px; margin:0 auto 120px;}
+        .ad_center{overflow:hidden; position:relative; width:100%; height:190px;}
+        .newUpdate{width:100%; background:#eae5dd;}
+            .newUpdate_inner{width:96%; min-width:640px; margin:0 auto; text-align:center; padding-top:65px;}
+        .weeklyBest{width:100%; background:#f6f4ee;}
+            .weeklyBest_inner{width:96%; min-width:640px; margin:0 auto; text-align:center; padding-top:65px;}
+        .nize{width:100%; padding-bottom:20px; background:#f6f4ee;}
+            .nize_inner{width:96%; min-width:640px; margin:0 auto; text-align:center; padding-top:65px;}
+
+        .detailArea{width:100%; padding:120px 0 90px; background:#f6f4ee;}
+        .detailArea::after{content:""; display:block; clear:both;}
+            .detailArea_inner{width:73%; min-width:560px; margin:0 auto; box-sizing:border-box;}
+            .detailArea_inner::after{content:""; display:block; clear:both;}
+        .recommend_item{width:73%; min-width:560px; margin:0 auto; padding:150px 0;}
+        .product_detail{position:relative; width:73%; min-width:560px; margin:0 auto;} 
+
+    #footer{width:100%; height:auto; padding:0 0 38px; background:#eae5dd;}
+        .footer_inner{width:96%; min-width:640px; margin:0 auto; padding:38px 28px 0; box-sizing:border-box;}
+        .footer_inner::after{content:""; display:block; clear:both;}
+}
+
+/* Tablet 크기 769~1024 */
+@media screen and (min-width:769px) and (max-width:1024px){
+    /* layout */
+    #header{width:100%; height:120px; position:fixed; left:0; top:0; z-index:40; overflow:hidden;}
+    .banner{z-index:30; overflow:hidden; position:relative; width:100%; height:1245px; background:#ddd;}
+    #container{width:100%; background:#f6f4ee;}
+    #container2{width:100%; background:#fff;}
+        .slowand{width:96%; min-width:968px; margin:0 auto; padding:30px 0 50px; text-align:center;}
+        .slowPick{width:96%; min-width:968px; margin:0 auto 100px;}
+        .theBest{position:relative; width:96%; min-width:968px; margin:0 auto 120px;}
+        .ad_center{overflow:hidden; position:relative; width:100%; height:190px;}
+        .newUpdate{width:100%; background:#eae5dd;}
+            .newUpdate_inner{width:96%; min-width:968px; margin:0 auto; text-align:center; padding-top:65px;}
+        .weeklyBest{width:100%; background:#f6f4ee;}
+            .weeklyBest_inner{width:96%; min-width:968px; margin:0 auto; text-align:center; padding-top:65px;}
+        .nize{width:100%; padding-bottom:20px; background:#f6f4ee;}
+            .nize_inner{width:96%; min-width:968px; margin:0 auto; text-align:center; padding-top:65px;}
+
+        .detailArea{width:100%; padding:120px 0 90px; background:#f6f4ee;}
+        .detailArea::after{content:""; display:block; clear:both;}
+            .detailArea_inner{width:91%; min-width:935px; margin:0 auto; box-sizing:border-box;}
+            .detailArea_inner::after{content:""; display:block; clear:both;}
+        .recommend_item{width:91%; min-width:935px; margin:0 auto; padding:150px 0;}
+        .product_detail{position:relative; width:91%; min-width:935px; margin:0 auto;}
+
+    #footer{width:100%; height:auto; padding:0 0 38px; background:#eae5dd;}
+        .footer_inner{width:96%; min-width:968px; margin:0 auto; padding:38px 28px 0; box-sizing:border-box;}
+        .footer_inner::after{content:""; display:block; clear:both;}
+}
+
+/* PC 크기 1025~최대 */
+@media screen and (min-width:1025px){
+    /* layout */
+    #header{width:100%; height:120px; position:fixed; left:0; top:0; z-index:40; overflow:hidden;}
+    .banner{z-index:30; position:relative; width:100%; min-width:1024px; height:750px; background:#ddd;}
+    #container{position:relative; top:0; width:100%; background:#f6f4ee;}
+    #container2{position:relative; top:0; width:100%; background:#fff;}
+        .slowand{width:1380px; margin:0 auto; padding:30px 0 50px; text-align:center;}
+        .slowPick{width:1380px; margin:0 auto 100px;}
+        .theBest{position:relative; width:1380px; margin:0 auto 120px;}
+        .ad_center{overflow:hidden; position:relative; width:100%; height:190px;}
+        .newUpdate{width:100%; background:#eae5dd;}
+            .newUpdate_inner{width:1380px; margin:0 auto; text-align:center; padding-top:65px;}
+        .weeklyBest{width:100%; background:#f6f4ee;}
+            .weeklyBest_inner{width:1380px; margin:0 auto; text-align:center; padding-top:65px;}
+        .nize{width:100%; background:#f6f4ee;}
+            .nize_inner{width:1380px; margin:0 auto; text-align:center; padding-top:65px;}
+
+        .detailArea{width:100%; padding:190px 0 90px; background:#f6f4ee;}
+        .detailArea::after{content:""; display:block; clear:both;}
+            .detailArea_inner{width:1080px; margin:0 auto; box-sizing:border-box;}
+        .recommend_item{width:1200px; margin:0 auto; padding:150px 0;}
+        .product_detail{position:relative; width:1200px; margin:0 auto;}
+
+    #footer{width:100%; height:auto; padding:0 0 80px; background:#eae5dd;}
+        .footer_inner{width:1685px; margin:0 auto; padding-top:80px;}
+        .footer_inner::after{content:""; display:block; clear:both;}
+}
