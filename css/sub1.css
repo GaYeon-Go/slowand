@@ -209,7 +209,7 @@
   div.size_detail>div{padding:24px 24px 80px; border:1px solid #ddd; box-sizing:border-box; background:#fff;}
 
   /* 팝업창 */
-  body.on{position:fixed; left:0; top:0; width:100%; height:100%;}
+  body.on{overflow:hidden; position:sticky; left:0; top:0; width:100%; height:100%;}
   div.size_bg.on{z-index:90; overflow-y:auto; position:fixed; left:0; top:0; right:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
   div.size_detail_popup{z-index:100; display:none; position:absolute; left:50%; transform:translateX(-50%); top:100px; width:550px; padding:65px; border-radius:20px; background:#fafafa; box-sizing:border-box;}
   div.size_detail_popup.on{display:block;}
@@ -467,7 +467,7 @@
   div.size_detail>div{padding:24px 24px 80px; border:1px solid #ddd; box-sizing:border-box; background:#fff;}
 
   /* 팝업창 */
-  body.on{position:fixed; left:0; top:0; width:100%; height:100%;}
+  body.on{overflow:hidden; position:sticky; left:0; top:0; width:100%; height:100%;}
   div.size_bg.on{z-index:90; overflow-y:auto; position:fixed; left:0; top:0; right:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
   div.size_detail_popup{z-index:100; display:none; position:absolute; left:50%; transform:translateX(-50%); top:100px; width:800px; padding:65px; border-radius:20px; background:#fafafa; box-sizing:border-box;}
   div.size_detail_popup.on{display:block;}
@@ -722,7 +722,7 @@
   div.size_detail>div{padding:24px 24px 80px; border:1px solid #ddd; box-sizing:border-box; background:#fff;}
 
   /* 팝업창 */
-  body.on{position:fixed; left:0; top:0; width:100%; height:100%;}
+  body.on{overflow:hidden; position:sticky; left:0; top:0; width:100%; height:100%;}
   div.bg.on{z-index:90; overflow-y:auto; position:fixed; left:0; top:0; right:0; bottom:0; width:100%; height:100%; background:rgba(0,0,0,0.4);}
   div.size_detail_popup{z-index:100; display:none; position:absolute; left:50%; transform:translateX(-50%); top:100px; width:1100px; padding:65px; border-radius:20px; background:#fafafa; box-sizing:border-box;}
   div.size_detail_popup.on{display:block;}

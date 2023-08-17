@@ -78,6 +78,11 @@ window.addEventListener('load', () => {
         body.classList.add('on');
         sizeDetailPopup.classList.add('on');
         sizeClose.classList.add('on');
+
+        sizeDetailPopup.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+        });
       });
     
       sizeClose.addEventListener('click', (e) => {
@@ -86,5 +91,7 @@ window.addEventListener('load', () => {
         body.classList.remove('on');
         sizeDetailPopup.classList.remove('on');
         sizeClose.classList.remove('on');
+
+        sizeDetailPopup.removeEventListener('wheel', parentScrollHandler);
       });
 });
